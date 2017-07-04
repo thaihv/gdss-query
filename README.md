@@ -5,3 +5,4 @@ Create project with Spring Boot 1.5
 * Spring data rest
 * Thymeleaf
 * Maven
+* MySQL
