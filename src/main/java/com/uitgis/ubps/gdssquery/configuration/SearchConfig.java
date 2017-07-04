@@ -44,5 +44,11 @@ public class SearchConfig {
     public ElasticsearchOperations elasticsearchTemplate() throws Exception {
         return new ElasticsearchTemplate(client());
     }
-
+    //for using with Embedded Elasticsearch Server
+/*    @Bean
+    public ElasticsearchOperations elasticsearchTemplate() {
+    	final NodeBuilder nodeBuilder = new NodeBuilder();
+        return new ElasticsearchTemplate(nodeBuilder.local(true).node().client());
+    }    
+*/
 }
